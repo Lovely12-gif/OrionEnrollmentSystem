@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['Username'])) {
                 if (password_verify($Password, $row['Password'])) {
                     echo "<p style='color:green;'>✅ Password matched!</p>";
                     $_SESSION['Username'] = $Username;
-                    header("Location: layout.php");
+                    header("Location: ../Config/layout.php");
                     exit();
                 } else {
                     echo "<p style='color:red;'>❌ Password did not match!</p>";

@@ -51,8 +51,8 @@
                                 while($row = $result->fetch_assoc()) {
                                 echo "<tr>";
                                 echo "<td>".$row["Fname"]." ".$row['Minitial']." ".$row['Lname']."</td>";
-                                echo "<td>".$row["Email"]."</td>";
-                                echo "<td>".$row["Department"]."</td>";
+                                echo "<td>".$row["Username"]."</td>";
+                                echo "<td>".$row["Password"]."</td>";
                                 echo "<td>".$row["Type"]."</td>";
                                 echo "<td>";
                                 echo "<a href='#' class='btn btn-link btn-primary btn-lg' data-bs-toggle='modal' data-bs-target='#editUserModal' 
@@ -182,7 +182,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="update_user.php" method="POST">
+                <form action="UserController.php" method="POST">
                     <input type="hidden" id="editUserID" name="user_id">
 
                     <div class="row">

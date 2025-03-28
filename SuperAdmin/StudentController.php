@@ -1,5 +1,6 @@
+
 <?php 
-include '../Config/connecttodb.php';
+include '../Config/connecttodb.php'; 
 
 if(isset($_POST['saveStudent'])){
     $Username = $_POST['username'];
